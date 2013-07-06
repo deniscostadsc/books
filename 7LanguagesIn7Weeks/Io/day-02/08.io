@@ -8,7 +8,7 @@
 
 attempts := 10
 distance := nil
-measurer := method(n, k, if((n - k) < 0, (n - k) * -1, (n - k)))
+measurer := method(number, guess, if((number - guess) < 0, (number - guess) * -1, (number - guess)))
 rand := Random value(1, 100) ceil
 
 writeln("Choice a number between 1 and 100")
