@@ -3,7 +3,7 @@
 %% Program to solve 8 queens problems.
 %%
 
-valid_queen(Row, Column) :-
+valid_queen((Row, Column)) :-
     Range = [1, 2, 3, 4, 5, 6, 7, 8],
     member(Row, Range),
     member(Column, Range).
