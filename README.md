@@ -4,4 +4,4 @@ books
 Solving
 -------
 
-*Seven languagen in seven weeks *
+**Seven languagen in seven weeks**
