@@ -1,4 +1,8 @@
 
+%%
+%% Program to solve sudoku puzzle.
+%%
+
 valid([]).
 valid([Head|Tail]) :-
     fd_all_different(Head),
