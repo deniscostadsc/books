@@ -1,4 +1,7 @@
 books
 =====
 
-books exercises
+Solving
+-------
+
+*Seven languagen in seven weeks *
