@@ -1,7 +1,7 @@
 books
 =====
 
-Solving
+Reading
 -------
 
-**Seven languagen in seven weeks**
+**Seven languages in seven weeks**
