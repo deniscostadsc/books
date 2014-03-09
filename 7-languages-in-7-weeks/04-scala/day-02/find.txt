@@ -1,0 +1,8 @@
+# A discussion on how to use Scala files
+
+http://alvinalexander.com/scala/scala-how-open-read-files-scala-examples
+
+
+# What makes a closure different from a code block
+
+Closure is the environment created by code blocks.
