@@ -5,21 +5,15 @@
 // store the curse words and their alternatives.
 //
 
-def censor(words: List[String]){
-    val censored_words = Map("shoot" -> "pucky", "darn" -> "beans")
-    val approved = words.foreach(
-        word => println(
-            word.replace("shoot", censored_words("shoot")).replace("darn", censored_words("darn"))
-        )
+def censor(sentence: String): String = {
+    val censoredTuples = Map("shoot" -> "pucky", "darn" -> "beans")
+    val safeSentence = censoredTuples.foldLeft(sentence)(
+        (editingSentence, censoredTuple) => editingSentence.replace(censoredTuple._1, censoredTuple._2)
     )
+    safeSentence
 }
 
-val lyrics = List(
-    "I'm", "goin'", "down", "to", "shoot", "my", "old",
-    "ladyI'm", "goin'", "down", "to", "shoot", "my",
-    "old", "lady"
-)
+val lyrics = "I'm goin' down to shoot my old lady"
 
-lyrics.foreach(word => println(word))
-
-censor(lyrics)
+println(lyrics)
+println(censor(lyrics))
