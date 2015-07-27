@@ -1,0 +1,5 @@
+# For the sizer program, what would happen if you did not create a
+# new actor for each link you wanted to follow? What would happen
+# to the performance of the application?
+
+The time the the program takes to run increases a lot.
