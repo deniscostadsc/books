@@ -1,0 +1,11 @@
+# The Erlang language’s official site
+
+http://www.erlang.org/
+
+# Official documentation for Erlang’s function library
+
+http://www.erlang.org/doc/apps/stdlib/index.html
+
+The documentation for Erlang’s OTP library
+
+http://www.erlang.org/doc/
