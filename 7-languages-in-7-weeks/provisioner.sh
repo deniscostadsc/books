@@ -6,13 +6,14 @@ sudo apt-get update
 sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
 
+sudo apt-get install -y openjdk-7-jdk # Required by Scala and Clojure
+sudo apt-get install -y unzip # To unzip Io package
+
 # Installing ruby
 # sudo apt-get install ruby # Ubuntu comes with Ruby =D
 
 
 # Installing Io
-sudo apt-get install -y zip unzip
-
 wget -q http://iobin.suspended-chord.info/linux/iobin-linux-x64-deb-current.zip
 unzip *.zip
 
@@ -26,10 +27,9 @@ sudo apt-get install -y gprolog
 
 
 # Installing Scala
-sudo apt-get install -y openjdk-7-jdk
-
 wget -q http://downloads.typesafe.com/scala/2.11.7/scala-2.11.7.tgz
 tar zxf scala-2.11.7.tgz
+
 sudo mv scala-2.11.7 /usr/share/scala
 
 sudo ln -s /usr/share/scala/bin/scala /usr/bin/scala
@@ -48,10 +48,10 @@ sudo apt-get install -y erlang
 
 
 # Installing Clojure
-wget https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
-sudo cp lein /bin/lein
+wget -q https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
+sudo mv lein /bin/lein
 sudo chmod a+x /bin/lein
 
 
 # Installing Haskell
-sudo apt-get install haskell-platform
+sudo apt-get install -y haskell-platform
