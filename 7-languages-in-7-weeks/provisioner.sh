@@ -40,6 +40,8 @@ sudo ln -s /usr/share/scala/bin/sbaz-setup /usr/bin/sbaz-setup
 sudo ln -s /usr/share/scala/bin/scaladoc /usr/bin/scaladoc
 sudo ln -s /usr/share/scala/bin/scalap /usr/bin/scalap
 
+rm scala-2.11.7.tgz
+
 
 # Installing Erlang
 sudo apt-get install -y erlang
