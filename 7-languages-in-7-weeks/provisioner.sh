@@ -45,3 +45,13 @@ rm scala-2.11.7.tgz
 
 # Installing Erlang
 sudo apt-get install -y erlang
+
+
+# Installing Clojure
+wget https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
+sudo cp lein /bin/lein
+sudo chmod a+x /bin/lein
+
+
+# Installing Haskell
+sudo apt-get install haskell-platform
