@@ -28,11 +28,11 @@ import (
 
 //!+main
 
-var palette = []color.Color{color.Black, color.RGBA{0x00, 0xFF, 0x00, 0xff}}
+var palette = []color.Color{color.White, color.Black}
 
 const (
 	whiteIndex = 0 // first color in palette
-	blackIndex = 1 // next color in palette
+	blackIndex = 2 // next color in palette
 )
 
 func main() {
