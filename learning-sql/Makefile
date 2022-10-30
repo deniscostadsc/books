@@ -1,11 +1,15 @@
-.DEFAULT: build
+.DEFAULT: run
+.PHONY: \
+	__build \
+	__docker-stop
+	run
 
-clean:
-	docker rm -f $(docker ps -a -q);
-	docker rmi -f $(docker images -q)
+__build:
+	docker build -q -t learning-sql .
 
-build:
-	docker build -t learning-sql .
+__docker-stop:
+	docker stop $$(docker ps | grep learning-sql | awk '{ print $$1 }')
 
-run:
-	docker run -t -p 3306 -v src/:/dev learning-sql
+run: __docker-stop __build
+	docker run -dt -p 3306 -v $$(pwd)/:/code learning-sql -u "$$(id -u):$$(id -g)"
+	docker exec -it $$(docker ps | grep learning-sql | awk '{ print $$1 }') bash

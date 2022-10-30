@@ -1,3 +1,10 @@
+/* begin database creation */
+
+create database bank;
+use bank;
+
+/* end database creation */
+
 /* begin table creation */
 
 create table department
